@@ -37,7 +37,7 @@ $res = $conn->query("Select id, name, email from users");
 for ($row_no = 0; $row_no < $res->num_rows; $row_no++) {
     $res->data_seek($row_no);
     $row = $res->fetch_assoc();
-    echo " Id = " . $row['id'] . " Name = " . $row['Name'] . " Email = " . $row['email'];
+    echo " Id = " . $row['id'] . " Name = " . $row['name'] . " Email = " . $row['email'];
     echo "<br>";
 }
 
